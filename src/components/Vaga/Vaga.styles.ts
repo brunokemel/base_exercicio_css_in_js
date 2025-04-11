@@ -25,7 +25,9 @@ export const VagaTitulo = styled.h3`
   margin-bottom: 16px;
 `
 
-export const VagaLink = styled.a`
+export const VagaLink = styled.a.attrs<{ href: string }>(() => ({
+  href: '#'
+}))`
   border-color: var(--cor-secundaria);
   background-color: var(--cor-principal);
   color: var(--cor-secundaria);

@@ -14,7 +14,7 @@ export const Campo = styled.input`
   outline-color: var(--cor-principal);
 `
 
-export const BotaoPesquisar = styled.button`
+export const BotaoPesquisar = styled.button.attrs({ type: 'submit' })`
   background-color: var(--cor-principal);
   border: 1px solid var(--cor-principal);
   height: 40px;
